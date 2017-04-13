@@ -30,6 +30,10 @@ def thumbnails():
     response.headers['Content-Type'] = 'application/json'       
     
     return response
+    
+@app.route('/thumbnails/view')
+def view():
+    return render_template('thumbnails.html')    
 
 ###
 # The functions below should be applicable to all Flask apps.
